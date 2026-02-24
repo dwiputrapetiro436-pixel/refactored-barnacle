@@ -1,0 +1,63 @@
+# robots.txt – Samehadaku
+# https://docs.bederr.com/
+
+User-agent: *
+Allow: /
+
+# Blokir halaman yang tidak perlu diindeks
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /feed/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /tag/
+Disallow: /page/
+Disallow: /comments/
+Disallow: /*?replytocom=
+Disallow: /*?preview=true
+
+# Izinkan akses ke file CSS dan JS penting
+Allow: /wp-content/themes/
+Allow: /wp-content/plugins/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Googlebot khusus
+User-agent: Googlebot
+Allow: /
+Disallow: /wp-admin/
+
+# Googlebot Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Crawl delay untuk bot lain
+User-agent: Bingbot
+Crawl-delay: 5
+
+User-agent: Yandex
+Crawl-delay: 10
+
+# Blokir bot berbahaya
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://docs.bederr.com/sitemap.xml
